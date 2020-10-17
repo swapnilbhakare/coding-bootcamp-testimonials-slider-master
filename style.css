@@ -1,0 +1,102 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 32px;
+  font-family: "Inter", sans-serif;
+}
+
+.slider {
+  background-image: url(images/pattern-curve.svg), url(images/pattern-bg.svg);
+  background-repeat: no-repeat;
+  background-position: left bottom, 346px 27px;
+  background-size: 575px, 550px;
+  border: 1px solid transparent;
+  height: 89vh;
+  margin: auto;
+  width: 900px;
+}
+
+.open {
+  display: flex;
+}
+
+.close {
+  display: none;
+}
+
+.slider-items {
+  /* border: 1px solid blue; */
+  margin: 78px 0px;
+  background-image: url(images/pattern-quotes.svg);
+  background-size: 89px;
+  background-repeat: no-repeat;
+  background-position: 73px 51px;
+  width: 900px;
+}
+
+.item {
+  display: none;
+  align-items: center;
+}
+
+.item.active {
+  display: flex;
+  align-items: center;
+}
+
+.text {
+  width: 500px;
+  font-size: 24px;
+  position: relative;
+  font-weight: 300;
+  left: 46px;
+  z-index: 1;
+  color: hsl(240, 38%, 20%);
+  word-spacing: 3px;
+  text-shadow: 1px 1px 2px grey;
+}
+
+h5 {
+  margin-top: 50px;
+  font-size: 15px;
+}
+
+h5 span {
+  color: hsl(240, 18%, 77%);
+}
+
+div.img {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+  height: 400px;
+  width: 420px;
+  position: relative;
+  box-shadow: 0px 7px 8px hsl(240, 18%, 77%);
+}
+
+.arrow {
+  height: 46px;
+  width: 89px;
+  background-color: white;
+  text-align: center;
+  font-weight: bolder;
+  border-radius: 27px;
+  position: absolute;
+  right: 437px;
+  bottom: 126px;
+  box-shadow: 2px 6px 11px grey;
+}
+
+.arrow button {
+  font-size: 35px;
+  border: none;
+  background: transparent;
+  padding: 3px;
+  color: hsl(240, 18%, 77%);
+  outline: none;
+}
